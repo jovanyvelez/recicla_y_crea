@@ -1,9 +1,10 @@
 <script>
 	import Menu from '$lib/components/Menu.svelte';
 	import inicio from '$lib/images/ambiente.png';
+	import fondo from '$lib/images/fondo2.jpg';
 </script>
 
-<main class="bodymin">
+<main class="bodymin" style={`background-image: url(${fondo});`}>
 	<Menu />
 	<div class="imagen-derecha">
 		<img src={inicio} alt="inicio" />
@@ -36,7 +37,7 @@
 		padding: 0;
 		font-family: 'Poppins', sans-serif;
 		color: rgba(0, 0, 0, 0.8);
-		background-image: url(fondo2.jpg);
+
 		object-fit: cover;
 	}
 
